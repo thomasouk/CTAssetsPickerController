@@ -40,9 +40,8 @@
 #import "NSIndexSet+CTAssetsPickerController.h"
 #import "NSBundle+CTAssetsPickerController.h"
 
-#import "KVNProgress.h"
-#import "AYVibrantButton.h"
-
+#import "KVNProgress/Classes/KVNProgress.h"
+#import "AYVibrantButton/AYVibrantButton.h"
 
 NSString * const CTAssetsGridViewCellIdentifier = @"CTAssetsGridViewCellIdentifier";
 NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIdentifier";
@@ -199,18 +198,20 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
     }
     
     if(!_buttonSelect){
-        UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]];
-        effectView.frame = CGRectMake(0, 64, self.view.frame.size.width, 50);
-        [self.view addSubview:effectView];
+         if(!self.picker.fromPopupTimeline){
+             UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]];
+             effectView.frame = CGRectMake(0, 64, self.view.frame.size.width, 50);
+             [self.view addSubview:effectView];
         
-        _buttonSelect = [[AYVibrantButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50) style:AYVibrantButtonStyleTranslucent];
-        _buttonSelect.vibrancyEffect = nil;
-        _buttonSelect.font = [UIFont systemFontOfSize:18.0];
-        _buttonSelect.backgroundColor = [UIColor blackColor];
-        _buttonSelect.text = NSLocalizedString(@"SelectAll", nil);
-        [_buttonSelect addTarget:self action:@selector(touchSelectAll) forControlEvents:UIControlEventTouchUpInside];
+             _buttonSelect = [[AYVibrantButton alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 50) style:AYVibrantButtonStyleTranslucent];
+             _buttonSelect.vibrancyEffect = nil;
+             _buttonSelect.font = [UIFont systemFontOfSize:18.0];
+             _buttonSelect.backgroundColor = [UIColor blackColor];
+             _buttonSelect.text = NSLocalizedString(@"SelectAll", nil);
+             [_buttonSelect addTarget:self action:@selector(touchSelectAll) forControlEvents:UIControlEventTouchUpInside];
         
-        [effectView addSubview:_buttonSelect];
+             [effectView addSubview:_buttonSelect];
+         }
     }
 }
 

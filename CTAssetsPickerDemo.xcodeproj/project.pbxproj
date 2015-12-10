@@ -29,6 +29,11 @@
 		ADFC004C1B54FF740024CBB9 /* CTLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFC004B1B54FF740024CBB9 /* CTLayoutViewController.m */; };
 		ADFE23881B46602400E44353 /* CTProgrammaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE23871B46602400E44353 /* CTProgrammaticViewController.m */; };
 		ADFE238B1B46868100E44353 /* CTApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE238A1B46868100E44353 /* CTApperanceViewController.m */; };
+		C0E4F0811C19DFD800322CDD /* AYVibrantButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E4F0801C19DFD800322CDD /* AYVibrantButton.m */; };
+		C0E4F08D1C19DFFD00322CDD /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E4F0851C19DFFD00322CDD /* UIImage+KVNEmpty.m */; };
+		C0E4F08E1C19DFFD00322CDD /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E4F0871C19DFFD00322CDD /* UIImage+KVNImageEffects.m */; };
+		C0E4F08F1C19DFFD00322CDD /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E4F08A1C19DFFD00322CDD /* KVNProgress.m */; };
+		C0E4F0901C19DFFD00322CDD /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E4F08C1C19DFFD00322CDD /* KVNProgressView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +185,15 @@
 		ADFE23871B46602400E44353 /* CTProgrammaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTProgrammaticViewController.m; sourceTree = "<group>"; };
 		ADFE23891B46868100E44353 /* CTApperanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTApperanceViewController.h; sourceTree = "<group>"; };
 		ADFE238A1B46868100E44353 /* CTApperanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTApperanceViewController.m; sourceTree = "<group>"; };
+		C0E4F07F1C19DFD800322CDD /* AYVibrantButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYVibrantButton.h; sourceTree = "<group>"; };
+		C0E4F0801C19DFD800322CDD /* AYVibrantButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYVibrantButton.m; sourceTree = "<group>"; };
+		C0E4F0841C19DFFD00322CDD /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		C0E4F0851C19DFFD00322CDD /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		C0E4F0861C19DFFD00322CDD /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		C0E4F0871C19DFFD00322CDD /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		C0E4F0891C19DFFD00322CDD /* KVNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgress.h; sourceTree = "<group>"; };
+		C0E4F08A1C19DFFD00322CDD /* KVNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgress.m; sourceTree = "<group>"; };
+		C0E4F08C1C19DFFD00322CDD /* KVNProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
 		F1B2FBB7FD634FB543BB7BB6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD69CDFBA7D07D903CCC8B80 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -333,6 +347,7 @@
 				AD08405F1ACD3F07003347CC /* CTAssetsPickerNoAssetsView.h */,
 				AD0840601ACD3F07003347CC /* CTAssetsPickerNoAssetsView.m */,
 				ADD9660C1AAD5780002A26A2 /* CTAssetsPickerDefines.h */,
+				C0E4F07D1C19DFC200322CDD /* Helper */,
 				ADD965F31AAD5780002A26A2 /* Categories */,
 				ADD966171AAD5780002A26A2 /* Resources */,
 			);
@@ -379,6 +394,62 @@
 				F1B2FBB7FD634FB543BB7BB6 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E4F07D1C19DFC200322CDD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F0821C19DFFD00322CDD /* KVNProgress */,
+				C0E4F07E1C19DFD800322CDD /* AYVibrantButton */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		C0E4F07E1C19DFD800322CDD /* AYVibrantButton */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F07F1C19DFD800322CDD /* AYVibrantButton.h */,
+				C0E4F0801C19DFD800322CDD /* AYVibrantButton.m */,
+			);
+			path = AYVibrantButton;
+			sourceTree = "<group>";
+		};
+		C0E4F0821C19DFFD00322CDD /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F0831C19DFFD00322CDD /* Categories */,
+				C0E4F0881C19DFFD00322CDD /* Classes */,
+				C0E4F08B1C19DFFD00322CDD /* Resources */,
+			);
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		C0E4F0831C19DFFD00322CDD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F0841C19DFFD00322CDD /* UIImage+KVNEmpty.h */,
+				C0E4F0851C19DFFD00322CDD /* UIImage+KVNEmpty.m */,
+				C0E4F0861C19DFFD00322CDD /* UIImage+KVNImageEffects.h */,
+				C0E4F0871C19DFFD00322CDD /* UIImage+KVNImageEffects.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C0E4F0881C19DFFD00322CDD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F0891C19DFFD00322CDD /* KVNProgress.h */,
+				C0E4F08A1C19DFFD00322CDD /* KVNProgress.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C0E4F08B1C19DFFD00322CDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4F08C1C19DFFD00322CDD /* KVNProgressView.xib */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +537,7 @@
 			files = (
 				ADD965DD1AAD4C4A002A26A2 /* LaunchScreen.xib in Resources */,
 				ADD965DA1AAD4C4A002A26A2 /* Images.xcassets in Resources */,
+				C0E4F0901C19DFFD00322CDD /* KVNProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD965CF1AAD4C49002A26A2 /* CTAppDelegate.m in Sources */,
+				C0E4F08F1C19DFFD00322CDD /* KVNProgress.m in Sources */,
 				ADD965D21AAD4C49002A26A2 /* CTMasterViewController.m in Sources */,
 				ADA073071B4515AF009FB7C7 /* CTPhotosViewController.m in Sources */,
 				AD6CDA4A1AC55BEE008C6AC2 /* UICollectionView+CTAssetsPickerController.m in Sources */,
@@ -536,8 +609,11 @@
 				ADA073041B45118F009FB7C7 /* CTMaxSelectionViewController.m in Sources */,
 				AD4B06CB1B44CD5A00D99C5A /* CTSortedAssetsViewController.m in Sources */,
 				ADA073101B462C98009FB7C7 /* CTLastWeekViewController.m in Sources */,
+				C0E4F08E1C19DFFD00322CDD /* UIImage+KVNImageEffects.m in Sources */,
+				C0E4F0811C19DFD800322CDD /* AYVibrantButton.m in Sources */,
 				AD4B06C81B428EEF00D99C5A /* CTiCloudAlbumsViewController.m in Sources */,
 				AD0786E21B428A73003C8863 /* CTDefaultAlbumViewController.m in Sources */,
+				C0E4F08D1C19DFFD00322CDD /* UIImage+KVNEmpty.m in Sources */,
 				AD0786D91B428313003C8863 /* CTBasicViewController.m in Sources */,
 				ADA0730D1B4625AA009FB7C7 /* CTUITweaksViewController.m in Sources */,
 				AD18AFD71BCC9BA9008B507D /* CTSelectionOrderViewController.m in Sources */,
