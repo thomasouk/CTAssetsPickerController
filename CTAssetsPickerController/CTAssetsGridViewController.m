@@ -186,6 +186,14 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
                                         target:self.picker
                                         action:@selector(finishPickingAssets:)];
     }
+    
+    if (self.navigationItem.leftBarButtonItem == nil){
+        self.navigationItem.leftBarButtonItem =
+        [[UIBarButtonItem alloc] initWithTitle:CTAssetsPickerLocalizedString(@"Cancel", nil)
+                                         style:UIBarButtonItemStylePlain
+                                        target:self.picker
+                                        action:@selector(dismiss:)];
+    }
 }
 
 - (void)setupAssets
